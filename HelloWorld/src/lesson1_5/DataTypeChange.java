@@ -29,7 +29,7 @@ public class DataTypeChange {
 		    	// Q1を下記に記載
 
 				String name = "山田太郎";
-				System.out.println(name);
+				System.out.println("初めまして" + name + "です");
 
 				int age = 25;        // ←値を変更しながら実行
 				System.out.println("年齢は" + age  + "です");
@@ -45,6 +45,7 @@ public class DataTypeChange {
 
 				String msg1 = "寿司";
 				System.out.println("好きな食べ物は" + msg1 + "です");	
+				
 
 
 		        // Q2 Q1で作成した自己紹介に続いて、BMIがコンソールに出力されるようにしてください
@@ -55,6 +56,8 @@ public class DataTypeChange {
 				double bmi = weight / ((height / 100) * (height / 100));
 		        // BMI値の出力
 		        System.out.println("BMIは" + Math.ceil(bmi * 10) / 10+ "です");
+		        
+		        System.out.println("");
 
 		        // Q3 Q1で宣言した変数に再代入し、下記の通りコンソールに出力してください
 		    	// 初めまして鈴木一郎です
