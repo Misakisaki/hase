@@ -1,20 +1,10 @@
 package lesson1_4;
 
 public class DataTypeChange {
-	
-	 static byte i ;
-	 static short sh;
-	 static int nt;
-	 static long l;
-	 static float f;
-	 static double d;
-	 static char ch;
-	 static String  st;
-	 static boolean  b;
-
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+	
 		    	 
 			     // Q1 下記9個をローカル変数として宣言のみしてください
 			     //		・バイト型・短整数型・整数型・長整数型
@@ -22,37 +12,37 @@ public class DataTypeChange {
 			     //   	・文字型・文字列型
 			     //	 	・ブーリアン型 
 
-				
+		 byte i ;
+		 short sh ;
+		 int nt;
+		 long l;
+		 float f;
+		 double d;
+		 char ch;
+		 String  st;
+		 boolean  b;
 		    	 
 			     // Q2 それぞれのクラス変数をローカル内でそれぞれの初期値を代入し初期化してください
 		    	
 
 				 i = 0;
-				 System.out.println(0); 
-
+				 
 				 sh = 0;
-				 System.out.println(0); 
 
 				 nt = 0;
-				 System.out.println(0); 
-
+				
 				 l = 0L;
-				 System.out.println(0L); 
 
 				 f = 0.0f;
-				 System.out.println(0.0f); 
 
 				 d= 0.0d;
-				 System.out.println(0.0d); 
-
+				
 				 ch = '\u0000';
-				 System.out.println('\u0000');
-
+	
 				 st =  null;
-				 System.out.println(st);
-
+				 
 				 b  = false;
-				 System.out.println(b);
+				 
 
 				
 		
@@ -94,10 +84,9 @@ public class DataTypeChange {
 
 			
 				 System.out.println(i + sh + nt + l); 
+				 
 
-
-				 float f = 20.0f;
-				 System.out.println(20.0f); 
+				 System.out.println(f+ d); 
 
 				 
 				 System.out.println(ch + st + b);
@@ -124,6 +113,8 @@ public class DataTypeChange {
 		 		int num1 = 23;
 		 		System.out.println("ハローJAVA" + (num + num1));
 		 		
+//		 		
+//		 		String num = "20"; から　int num = 20;　へ　変更
 		}
 	}
 
