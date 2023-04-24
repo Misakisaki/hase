@@ -2,8 +2,8 @@ package lesson1_4;
 
 public class DataTypeChange {
 
-	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+public static void main(String[] args) {
+				// TODO 自動生成されたメソッド・スタブ
 	
 		    	 
 			     // Q1 下記9個をローカル変数として宣言のみしてください
@@ -12,15 +12,15 @@ public class DataTypeChange {
 			     //   	・文字型・文字列型
 			     //	 	・ブーリアン型 
 
-		 byte i ;
-		 short sh ;
-		 int nt;
-		 long l;
-		 float f;
-		 double d;
-		 char ch;
-		 String  st;
-		 boolean  b;
+				byte i ;
+				short sh ;
+				int nt;
+				long l;
+				float f;
+		 		double d;
+		 		char ch;	
+		 		String  st;
+		 		boolean  b;
 		    	 
 			     // Q2 それぞれのクラス変数をローカル内でそれぞれの初期値を代入し初期化してください
 		    	
@@ -44,9 +44,7 @@ public class DataTypeChange {
 				 b  = false;
 				 
 
-				
-		
-
+			
 				
 			     // Q3 初期化をしたそれぞれの変数に下記の値を代入してください
 			
@@ -102,7 +100,6 @@ public class DataTypeChange {
 				 
 				 
 				 System.out.println(i - sh); 
-				 
 				 
 
 				    	 
