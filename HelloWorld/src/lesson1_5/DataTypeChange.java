@@ -31,8 +31,8 @@ public class DataTypeChange {
 				String name = "山田太郎";
 				System.out.println("初めまして" + name + "です");
 
-				int age = 25;        // ←値を変更しながら実行
-				System.out.println("年齢は" + age  + "です");
+				int age = 18;        // ←値を変更しながら実行
+				System.out.println("年齢は" + age  + "歳です");
 
 				
 				double height  = 170.5;
@@ -73,17 +73,23 @@ public class DataTypeChange {
 				name = "鈴木一郎";		
 				System.out.println("初めまして" + name + "です");
 				// 年齢変数の宣言と初期化
-				age = 25;        // ←値を変更しながら実行
-				System.out.println("年齢は" + age  + "です");
+				age = 24;        // ←値を変更しながら実行
+				System.out.println("年齢は" + age  + "歳です");
 		        height = 168.5;        // ←値を変更しながら実行
 		        weight = 64.2;         // ←値を変更しながら実行
-		        System.out.println("身長：" + height + "（cm）");
-		        System.out.println("体重：" + weight + "（kg）");
+		        System.out.println("身長：" + height + "cm");
+		        System.out.println("体重：" + weight + "kg");
+
+		        String msg2 = "オムライス";
+				System.out.println("好きな食べ物は" + msg2 + "です");	
+		        
 		        // BMI値の算出と表示
 		        // BMI変数の宣言と演算結果の格納
 		        bmi = weight / ((height / 100) * (height / 100));
 		        // BMI値の出力
 		        System.out.println("BMIは" + Math.floor(bmi * 10) / 10 + "です");
+		        
+		        
 		      
 		        
 				
