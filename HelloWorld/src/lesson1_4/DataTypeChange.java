@@ -109,9 +109,6 @@ public static void main(String[] args) {
 		 		int num = 20;
 		 		int num1 = 23;
 		 		System.out.println("ハローJAVA" + (num + num1));
-		 		
-//		 		
-//		 		String num = "20"; から　int num = 20;　へ　変更
 		}
 	}
 
