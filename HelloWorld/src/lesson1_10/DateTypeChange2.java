@@ -8,17 +8,17 @@ public class DateTypeChange2 {
 							・
 							・
 					9×1=9 9×2=18…9×9=81
-					*/
+	 */
 
-		public static void main(String[] args) {
-			
-			    int start_num = 1;
-			    int end_num = 9;
-			    for(int i = start_num; i <= end_num; i++){
-			        for(int j = start_num; j <= end_num; j++){
-			          System.out.print( i+"×"+j+"="+i*j+"　");
-			        }
-			        System.out.println();
-			    }
+	public static void main(String[] args) {
+
+		int start_num = 1;
+		int end_num = 9;
+		for(int i = start_num; i <= end_num; i++){
+			for(int j = start_num; j <= end_num; j++){
+				System.out.print( i+"×"+j+"="+i*j+"　");
+			}
+			System.out.println();
 		}
+	}
 }
