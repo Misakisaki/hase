@@ -1,6 +1,6 @@
 package lesson1_12;
 public class DateTypeChange {
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
 		// TODO 自動生成されたメソッド・スタブ
 		/*
@@ -16,27 +16,27 @@ public static void main(String[] args) {
 							・
 							・
 						100は偶数です
-	*/
-		   int i = 0;
-		   while (i < 100) {
-		   i++;
-		   if((i % 2 == 0) && (i != 0)) {
-			System.out.println(i+"は偶数です");
-		   }
-		   else{
-			System.out.println(i+"は奇数です");
-		   }
-		 }
+		 */
+		int i = 0;
+		while (i < 100) {
+			i++;
+			if((i % 2 == 0) && (i != 0)) {
+				System.out.println(i+"は偶数です");
+			}
+			else{
+				System.out.println(i+"は奇数です");
+			}
+		}
 	}
 }
-		   
-		      
-		      
-		
-	
 
-		
-			
-	
+
+
+
+
+
+
+
+
 
 
