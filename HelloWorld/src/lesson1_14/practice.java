@@ -22,10 +22,9 @@ public class practice {
 		//		           g
 		//		           h
 		//		           j
-
 		String[] alpha = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
-		// for文と配列は相性が抜群
-		// iはindex番号をループ処理
+
+		// iはindex番号をループ処理 for文と配列は相性が抜群
 		for (int i = 0; i < alpha.length; i++) {
 			if(i == ４) {
 				// 強制的に終了し次の処理へ移る
@@ -33,23 +32,16 @@ public class practice {
 			}else {
 				System.out.println(alpha[i]);
 			}
-		}	
-
+		}
 
 		for (int j = 0; j < alpha.length; j++) {
 			// カウンタ変数iをインデックスとして利用
 			if(j == 8) {
 				continue;
-			// for文のループをcontinue文でスキップする
+				// for文のループをcontinue文でスキップする
 			}else {
 				System.out.println(alpha[j]);
-
 			}
 		}
 	}
 }
-
-
-
-
-
