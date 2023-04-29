@@ -51,7 +51,5 @@ public class DateTypeChange {
 		//④int c をString型の変数をint型に型変換して、コンソールへ出力
 		c = Integer.parseInt(e);
 		System.out.println(c);
-		
-	
 	}
 }
