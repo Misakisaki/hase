@@ -57,7 +57,7 @@ public class DateTypeChange {
 				sum += test[j][i];
 			}
 			//それぞれの教科の平均点を表示
-			System.out.println(subjects[i] + "の平均点:" + (double) sum / test.length + "点");
+			System.out.println(subjects[i] + "の平均点:" + (int) sum / test.length + "点");
 		}
 	}
 }
