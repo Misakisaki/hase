@@ -43,6 +43,7 @@ public class DataTypeAndMemory {
 		int[] b = nums;
 		b[1] = 8;
 		System.out.println(b[1]);
+		System.out.println(nums[1]);
 	}
 }
 
