@@ -18,6 +18,6 @@ public class Dog {
 		
 	
 		}
-	}}
+	}
 
-
+// Java インポート　
