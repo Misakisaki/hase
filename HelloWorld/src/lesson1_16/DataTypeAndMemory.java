@@ -19,12 +19,12 @@ public class DataTypeAndMemory {
 	//	型とメモリの関係
 	public static void main(String[] args) {
 		// 「A」という文字列を変数に代入
-		String strVar１ = "A";
-		System.out.println(strVar１);
+		char strVar1 = 'A';
+		System.out.println(strVar1);
 
 		// 「Hello Java」という文字列を変数に代入
-		String strVar２ = "Hello Java";
-		System.out.println(strVar２);
+		String strVar2 = "Hello Java";
+		System.out.println(strVar2);
 
 		// 富士山の標高を整数で変数に代入
 		int mt = 3776;
