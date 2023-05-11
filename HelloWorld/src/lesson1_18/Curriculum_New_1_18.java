@@ -44,21 +44,19 @@ public class Curriculum_New_1_18 {
 
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
-	public static double average(int[] RandonMix){ // Q5の返り値を受け取る
+	public static double average(int[] RandomMix){ // Q5の返り値を受け取る
 		// 平均値を求めるためにRandonMixの中の値を足し算する
 		int plusTotal = 0; 
-		for(int number : RandonMix){
+		for(int number : RandomMix){
 			plusTotal += number;
 		}
-		// 戻り値（足し算）の合計を　lengthを使って配列の数で割る
-		double num = plusTotal/RandonMix.length;
+		// 戻り値（足し算）の合計をlengthを使って配列の数で割る	
+		double num = (double)plusTotal/RandomMix.length;
 		// 平均値をコンソールに出力する
-		System.out.println("");
-		System.out.println(num);
+		System.out.println(num);  
 		// 平均値を返す
 		return num;
 	}
-
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 	public static boolean bool(double num){
 		if(num > 50){
