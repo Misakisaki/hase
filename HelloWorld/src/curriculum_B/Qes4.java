@@ -14,14 +14,14 @@ public class Qes4 {
 				// 掛け算の式
 				int answer = number[i] * number[j];
 				// StringJoinerを使用した文字列の連結方法
-				StringJoiner sj = new StringJoiner(" ", " ", " || ");
+				StringJoiner sj = new StringJoiner(" ", " ", " ||");
 				sj.add(String.format("%02d", number[i])).add("*").add(String.format("%02d", number[j]))
 						.add("=").add(String.format("%02d", answer));
 				// 掛け算の結果出力
 				System.out.print(sj);
-				// 改行
-				System.out.println();
 			}
+			// 改行
+			System.out.println();
 		}
 	}
 }
