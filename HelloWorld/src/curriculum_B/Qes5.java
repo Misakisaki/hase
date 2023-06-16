@@ -16,20 +16,21 @@ public class Qes5 {
 
 				// StringJoinerを使用した文字列の連結方法
 				StringJoiner sj = new StringJoiner(" ", " ", " ||");
-				// String.format(書式文字列, 値);
-				// %02d
-				// %・・・書式文字列であることを表す指示子
-				// 0・・・埋める文字。この場合ゼロ
-				// 2・・・桁数。2桁
-				// d・・・出力する値の型。この場合整数(decimal)
-				// j*iの掛け算を2桁で0埋めする
-				sj.add(String.format("%02d", j)).add("*").add(String.format("%02d", i))
-						// 3・・・桁数。掛け算の答えを3桁で0埋めする
-						.add("=").add(String.format("%03d", answer));
+				// 左辺が9の段までは2桁で0埋め　左辺が10の段以降は3桁で0埋めする
+				if (j > 9) {
+					sj.add(String.format("%03d", j)).add("*").add(String.format("%02d", i))
+							.add("=").add(String.format("%03d", answer));
+
+					// それ以外は2桁で0埋め、答えは3桁で0埋めする
+				} else {
+					sj.add(String.format("%02d", j)).add("*").add(String.format("%02d", i))
+							.add("=").add(String.format("%03d", answer));
+				}
 				// 掛け算の結果出力
 				System.out.print(sj);
+				// 改行
+				System.out.println();
 			}
-			System.out.println();
 		}
 	}
 }
