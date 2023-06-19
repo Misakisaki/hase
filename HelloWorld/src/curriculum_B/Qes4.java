@@ -4,7 +4,6 @@ public class Qes4 {
 	public static void main(String[] args) {
 		// 課題5
 		// 1~20の入った変数の定義
-
 		// 変数0の定義、１ずつ足していく処理　1の段9の段まで表示
 		for (int i = 1; i < 10; i++) {
 			// 変数0の定義、１ずつ足していく処理 10の段から20の段まで表示
