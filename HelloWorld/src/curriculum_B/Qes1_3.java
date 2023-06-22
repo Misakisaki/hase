@@ -63,7 +63,6 @@ public class Qes1_3 {
 			// 1行を読み込んで返却
 
 			String str = scanner.nextLine();
-			
 
 			// 正規表現のパターンを作成
 			Pattern p = Pattern.compile("^[A-Za-z0-9]+$");
@@ -77,7 +76,7 @@ public class Qes1_3 {
 			else if (str == null || str.isEmpty()) {
 				System.out.println("名前を入力してください");
 				continue;
-		
+
 			}
 			// ユーザー名が半角英数字以外の場合「半角英数字のみで名前を入力してください」と出力してください
 			else if (!m.find()) {
@@ -104,15 +103,17 @@ public class Qes1_3 {
 				int user = Integer.parseInt(scanner.nextLine());
 
 				// 0、1、2以外の数字が選ばれたら「コンピューター側の手をランダムに選ぶ」を繰り返す
-				while (user < 0 || user > 2)
-					;
-
+				while (user < 0 || user > 2);
 				// 勝つまでにかかった合計回数のカウント
 				count++;
 				// userとcompのじゃんけんの出力結果
 				System.out.printf(str + "の手は%s\n相手の手は%s\n", "「" + hands[user] + "」", "「" + hands[comp] + "」");
-				// じゃんけんの三つの全てのパターンで勝つ
-				if ((user == 2) && (comp == 0) || ((user == 0) && (comp == 1) || ((user == 1) && (comp == 2)))) {
+				// あいこの場合
+				if (user == comp) {
+					System.out.println("DRAW あいこ もう一回しましょう！");
+
+					// じゃんけんの三つの全てのパターンで勝つ
+				} else if ((user == 2) && (comp == 0) || ((user == 0) && (comp == 1) || ((user == 1) && (comp == 2)))) {
 					System.out.println("やるやん\r\n次は俺にリベンジさせて");
 					System.out.println("勝つまでにかかった合計回数は" + count + "回です");
 					// じゃんけんで勝ったらフラグを「0」で繰り返していたものを、フラグを「1」にして止める。
@@ -127,9 +128,6 @@ public class Qes1_3 {
 					// 自分がじゃんけんでグーに負けた場合
 				} else if ((user == 2) && (comp == 1)) {
 					System.out.println("俺の勝ち！\r\nなんで負けたか、明日まで考えといてください。\r\nそしたら何かが見えてくるはずです");
-					// あいこの場合
-				} else if (user == comp) {
-					System.out.println("DRAW あいこ もう一回しましょう！");
 				}
 				// 勝つまでじゃんけんを続ける。
 			} while (retry == 0);
