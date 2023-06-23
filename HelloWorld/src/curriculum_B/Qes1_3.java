@@ -103,7 +103,8 @@ public class Qes1_3 {
 				int user = Integer.parseInt(scanner.nextLine());
 
 				// 0、1、2以外の数字が選ばれたら「コンピューター側の手をランダムに選ぶ」を繰り返す
-				while (user < 0 || user > 2);
+				while (user < 0 || user > 2)
+					;
 				// 勝つまでにかかった合計回数のカウント
 				count++;
 				// userとcompのじゃんけんの出力結果
@@ -119,14 +120,14 @@ public class Qes1_3 {
 					// じゃんけんで勝ったらフラグを「0」で繰り返していたものを、フラグを「1」にして止める。
 					retry = 1;
 					scanner.close();
-					// 自分がじゃんけんでパーに負けた場合
+					// 自分がじゃんけんでグーに負けた場合
 				} else if ((user == 0) && (comp == 2)) {
 					System.out.println("俺の勝ち！\r\n負けは次につながるチャンスです！\r\nネバーギブアップ！");
 					// 自分がじゃんけんでチョキに負けた場合
-				} else if ((user == 1) && (comp == 0)) {
-					System.out.println("俺の勝ち！\r\nたかがじゃんけん、そう思ってないですか？\r\nそれやったら次も、俺が勝ちますよ");
-					// 自分がじゃんけんでグーに負けた場合
 				} else if ((user == 2) && (comp == 1)) {
+					System.out.println("俺の勝ち！\r\nたかがじゃんけん、そう思ってないですか？\r\nそれやったら次も、俺が勝ちますよ");
+					// 自分がじゃんけんでパーに負けた場合
+				} else if ((user == 1) && (comp == 0)) {
 					System.out.println("俺の勝ち！\r\nなんで負けたか、明日まで考えといてください。\r\nそしたら何かが見えてくるはずです");
 				}
 				// 勝つまでじゃんけんを続ける。
