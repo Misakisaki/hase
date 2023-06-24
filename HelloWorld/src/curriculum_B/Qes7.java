@@ -44,6 +44,9 @@ public class Qes7 {
 		// 改行
 		System.out.println();
 
+		double average2;
+		double total = 0;
+
 		// 科目毎の平均点
 		for (int k = 0; k < subjects.length; k++) {
 			// 全ての教科の合計の平均点
@@ -56,10 +59,13 @@ public class Qes7 {
 			// 各教科の合計点数の平均点の出力
 			System.out.printf(subjects[k] + "の平均点は" + String.format("%.2f", (double) sum / scores.length) + "点です。");
 			System.out.println();
+
+			total += sum / scores.length;
 		}
 		// 全体の平均点、小数点第二位まで表示
-		System.out.printf(
-				"全体の平均点は" + String.format("%.2f", (double) stuNumber * scores.length * subjects.length) + "点です。");
+		average2 = total / 4;
+		System.out.println("全体の平均点は" + String.format("%.2f", average2) + "点です。");
+		System.out.println();
 	}
 }
 //  ☆変数一覧☆
