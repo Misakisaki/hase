@@ -14,7 +14,6 @@ public class Main {
 		String name = scanner.nextLine();
 		Sub bbb = new Sub(name);
 		System.out.println(bbb);
-
 	}
 }
 

@@ -12,5 +12,4 @@ public class Sub extends Super {
 		// TODO 自動生成されたメソッド・スタブ
 
 	}
-
 }

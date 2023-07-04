@@ -52,7 +52,6 @@ public class Super {
 		return "こんにちは 「" + name + "」 さん\n" + "ステータス\n" + "HP：" + hp + "\nMP：" + mp + " \n攻撃力："
 				+ power + "\n素早さ：" + agility + "\n防御力：" + defense + "\n\nさあ冒険に出かけよう！";
 	}
-
 }
 
 /*
