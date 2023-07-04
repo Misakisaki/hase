@@ -14,7 +14,6 @@ public class Super {
 	public Super(String name) {
 		this.name = name;
 	}
-	
 
 	public void setValue() {
 		Random rand = new Random();
@@ -48,8 +47,6 @@ public class Super {
 	public void setname(String name) {
 		this.name = name;
 	}
-
-	
 
 	public String toString() {
 		return "こんにちは 「" + name + "」 さん\n" + "ステータス\n" + "HP：" + hp + "\nMP：" + mp + " \n攻撃力："

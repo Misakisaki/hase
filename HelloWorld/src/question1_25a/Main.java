@@ -6,19 +6,16 @@ import question1_25b.Sub;
 
 public class Main {
 
-
-		@SuppressWarnings("resource")
-		public static void main(String[] args) {
-//		System.out.println(new Sub(new Scanner(System.in).nextLine()));
-		
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		//		System.out.println(new Sub(new Scanner(System.in).nextLine()));
 
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.nextLine();
 		Sub bbb = new Sub(name);
 		System.out.println(bbb);
-		
-		
-		}
+
+	}
 }
 
 /*
