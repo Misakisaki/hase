@@ -17,11 +17,11 @@ public class Super {
 
 	public void setValue() {
 		Random rand = new Random();
-		hp = rand.nextInt();
-		mp = rand.nextInt();
-		power = rand.nextInt();
-		agility = rand.nextInt();
-		defense = rand.nextInt();
+		hp = rand.nextInt(1000) + 1;
+		mp = rand.nextInt(1000) + 1;
+		power = rand.nextInt(1000) + 1;
+		agility = rand.nextInt(1000) + 1;
+		defense = rand.nextInt(1000) + 1;
 	}
 
 	public int getagility() {
@@ -49,7 +49,7 @@ public class Super {
 	}
 
 	public String toString() {
-		return "こんにちは 「" + name + "」 さん\n" + "ステータス\n" + "HP：" + hp + "\nMP：" + mp + " \n攻撃力："
+		return "こんにちは 「 " + name + " 」 さん\n" + "ステータス\n" + "HP：" + hp + "\nMP：" + mp + " \n攻撃力："
 				+ power + "\n素早さ：" + agility + "\n防御力：" + defense + "\n\nさあ冒険に出かけよう！";
 	}
 }

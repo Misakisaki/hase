@@ -13,6 +13,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.nextLine();
 		Sub bbb = new Sub(name);
+		bbb.setValue();
 		System.out.println(bbb);
 	}
 }

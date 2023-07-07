@@ -4,7 +4,6 @@ public class Sub extends Super {
 
 	public Sub(String name) {
 		super(name);
-		setname(name);
 	}
 
 	@SuppressWarnings("unused")
