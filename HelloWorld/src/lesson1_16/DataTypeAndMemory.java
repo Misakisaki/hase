@@ -1,4 +1,5 @@
 package lesson1_16;
+
 public class DataTypeAndMemory {
 
 	// TODO 自動生成されたメソッド・スタブ
@@ -35,7 +36,7 @@ public class DataTypeAndMemory {
 		System.out.println(v1);
 
 		// 変数numsに「10, 100, 1000」が格納された配列を代入し、メモリの番地が1のデータを出力
-		int[] nums = { 10, 100, 1000};
+		int[] nums = { 10, 100, 1000 };
 		System.out.println(nums[1]);
 
 		// Q5で作成した変数numsを変数bに代入し、その後変数bのメモリの番地が1のデータを「8」に上書きさせて
@@ -46,9 +47,3 @@ public class DataTypeAndMemory {
 		System.out.println(nums[1]);
 	}
 }
-
-
-
-
-
-

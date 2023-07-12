@@ -1,32 +1,29 @@
-package question1_;
+package question1_20_22a;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import question1_20_23.Sushi;
+import question1_20_22b.Sushi;
 
 public class Answer {
-	private static final String Country = "日本";
-	private static final String SushiName = "寿司";
-	private static final String food = "和食";
 
 	public static void main(String[] args) {
 
 		// Sushiクラスをインスタンス化する
-		Sushi bbb = new Sushi();
+		Sushi Sushi = new Sushi();
 
 		// セッターを呼び出す
-		bbb.setKuniName(Country);
-		bbb.setSushiName(SushiName);
-		bbb.setName(food);
+		Sushi.setKuniName("日本");
+		Sushi.setSushiName("寿司");
+		Sushi.setName("和食");
 
 		// ゲッターを呼び出して変数に代入し、各内容をコンソールに出力してください。
 		// こんにちは！ここは日本です！
-		System.out.println("こんにちは！ここは" + bbb.getKuniName() + "です! ");
+		System.out.println("こんにちは！ここは" + Sushi.getKuniName() + "です! ");
 		// この寿司はうまい
-		System.out.println("この" + bbb.getSushiName() + "はうまい");
+		System.out.println("この" + Sushi.getSushiName() + "はうまい");
 		// 寿司は和食です
-		System.out.println(bbb.getSushiName() + "は" + bbb.getName() + "です");
+		System.out.println(Sushi.getSushiName() + "は" + Sushi.getName() + "です");
 
 		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
 		//Calendarクラスのオブジェクトを生成する
