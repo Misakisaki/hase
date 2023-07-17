@@ -12,11 +12,6 @@ public class Answer {
 		// Sushiクラスをインスタンス化する
 		Sushi Sushi = new Sushi();
 
-		// セッターを呼び出す
-		Sushi.setKuniName("日本");
-		Sushi.setSushiName("寿司");
-		Sushi.setName("和食");
-
 		// ゲッターを呼び出して変数に代入し、各内容をコンソールに出力してください。
 		// こんにちは！ここは日本です！
 		System.out.println("こんにちは！ここは" + Sushi.getKuniName() + "です! ");
@@ -24,12 +19,11 @@ public class Answer {
 		System.out.println("この" + Sushi.getSushiName() + "はうまい");
 		// 寿司は和食です
 		System.out.println(Sushi.getSushiName() + "は" + Sushi.getName() + "です");
-
-		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
-		//Calendarクラスのオブジェクトを生成する
+		// Calendarクラスのオブジェクトを生成する
 		Calendar cl = Calendar.getInstance();
-		//SimpleDateFormatクラスでフォーマットパターンを設定する
+		// SimpleDateFormatクラスでフォーマットパターンを設定する
 		SimpleDateFormat sdf = new SimpleDateFormat("今の現在日時はyyyy/MM/dd H:m:sです");
+		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
 		System.out.println(sdf.format(cl.getTime()));
 	}
 	/*
@@ -46,7 +40,6 @@ public class Answer {
 		・適切なファイルにフィールドで変数を必要な数作ってください。
 		・thisを使って作成してください。
 		・日時は今日の日付を取得してください。
-		
 	*/
 
 }

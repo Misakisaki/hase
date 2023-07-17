@@ -6,7 +6,6 @@ public class Sushi {
 	private String SushiName = "寿司";
 	private String Country = "日本";
 	private String food = "和食";
-	
 
 	// 値をセットする（setter)
 	// "日本";
