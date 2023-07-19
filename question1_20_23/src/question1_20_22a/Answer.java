@@ -12,6 +12,13 @@ public class Answer {
 		// Sushiクラスをインスタンス化する
 		Sushi Sushi = new Sushi();
 
+		// 〇〇の＝（Sushi.Javaのコンストラクタを呼び出す)セッターで引数に寿司を渡す
+		Sushi.setSushiName("寿司");
+		// 〇〇の＝（Sushi.Javaのコンストラクタを呼び出す)セッターで引数に日本を渡す
+		Sushi.setKuniName("日本");
+		// 〇〇の＝（Sushi.Javaのコンストラクタを呼び出す)セッターで引数に和食を渡す
+		Sushi.setName("和食");
+
 		// ゲッターを呼び出して変数に代入し、各内容をコンソールに出力してください。
 		// こんにちは！ここは日本です！
 		System.out.println("こんにちは！ここは" + Sushi.getKuniName() + "です! ");

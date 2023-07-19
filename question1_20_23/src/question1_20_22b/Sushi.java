@@ -3,9 +3,9 @@ package question1_20_22b;
 public class Sushi {
 
 	// Q1：フィールドに値の名前の変数を定義してください。
-	private String SushiName = "寿司";
-	private String Country = "日本";
-	private String food = "和食";
+	private String SushiName;
+	private String Country;
+	private String food;
 
 	// 値をセットする（setter)
 	// "日本";
@@ -13,22 +13,24 @@ public class Sushi {
 		this.Country = Country;
 	}
 
+	public String getKuniName() {
+		return Country;
+	}
+	
+	
 	// "寿司";
 	public void setSushiName(String SushiName) {
 		this.SushiName = SushiName;
 	}
-
-	// "和食";
-	public void setName(String food) {
-		this.food = food;
-	}
+	
 
 	public String getSushiName() {
 		return SushiName;
 	}
 
-	public String getKuniName() {
-		return Country;
+	// "和食";
+	public void setName(String food) {
+		this.food = food;
 	}
 
 	public String getName() {
