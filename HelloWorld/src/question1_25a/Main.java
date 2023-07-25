@@ -1,5 +1,5 @@
 package question1_25a;
-
+// Scannerクラスは、Javaで標準入力からデータを読み取るための便利なクラスです。
 import java.util.Scanner;
 
 import question1_25b.Sub;
@@ -8,12 +8,15 @@ public class Main {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		//		System.out.println(new Sub(new Scanner(System.in).nextLine()));
-
+		// Scannerクラスのインスタンスを作成して、scannerという名前の変数に代入しています。
 		Scanner scanner = new Scanner(System.in);
+		// ユーザーが入力した次の行を読み取り、それを文字列として返します。ユーザーが入力した値を name 変数に格納します。
 		String name = scanner.nextLine();
+		// Sub クラスの新しいインスタンスを作成し、bbb という変数に代入しています。引数 name を使用して、Sub クラスの新しいインスタンスが生成されます。
 		Sub bbb = new Sub(name);
+		// bbb.setValue(); は、bbb というオブジェクトの setValue メソッドを呼び出しています。
 		bbb.setValue();
+		// 引数として渡されたオブジェクトの文字列表現を出力します。
 		System.out.println(bbb);
 	}
 }
