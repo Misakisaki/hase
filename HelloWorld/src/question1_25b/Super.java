@@ -40,6 +40,36 @@ public class Super {
 		defense = rand.nextInt(1000) + 1;
 	}
 
+	// gethpメソッドはhpという名前の変数の値を返します。
+	public int gethp() {
+		return hp;
+	}
+
+	// sethpメソッドはhpという名前の変数の値を設定します。
+	public void sethp(int hp) {
+		this.hp = hp;
+	}
+	
+	// getmpメソッドはmpという名前の変数の値を返します。
+	public int getmp() {
+		return mp;
+	}
+
+	// setmpメソッドはmpという名前の変数の値を設定します。
+	public void setmp(int mp) {
+		this.mp = mp;
+	}
+	
+	// getpowerメソッドはpowerという名前の変数の値を返します。
+	public int getpower() {
+		return power;
+	}
+
+	// setpowerメソッドはpowerという名前の変数の値を設定します。
+	public void setpower(int power) {
+		this.power = power;
+	}
+	
 	// getagilityメソッドはagilityという名前の変数の値を返します。
 	public int getagility() {
 		return agility;
@@ -49,7 +79,7 @@ public class Super {
 	public void setagility(int agility) {
 		this.agility = agility;
 	}
-
+	
 	// getdefenseメソッドはdefenseという名前の変数の値を返します。
 	public int getdefense() {
 		return defense;

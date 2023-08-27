@@ -1,4 +1,5 @@
 package question1_25a;
+
 // Scannerクラスは、Javaで標準入力からデータを読み取るための便利なクラスです。
 import java.util.Scanner;
 
