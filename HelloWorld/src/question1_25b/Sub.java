@@ -6,7 +6,6 @@ public class Sub extends Super {
 	public Sub(String name) {
 		super(name);
 	}
-
 	// アノテーションが付いている場合、変数やメソッドが未使用であっても警告が表示されなくなります。
 	@SuppressWarnings("unused")
 	// privateなので同じクラス内からのみ呼び出すことができます
