@@ -16,14 +16,12 @@ public class Sushi {
 	public String getKuniName() {
 		return Country;
 	}
-	
-	
+
 	// "寿司";
 	public void setSushiName(String SushiName) {
 		this.SushiName = SushiName;
 	}
 	
-
 	public String getSushiName() {
 		return SushiName;
 	}
