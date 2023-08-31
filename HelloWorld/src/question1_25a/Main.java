@@ -18,7 +18,7 @@ public class Main {
 		// bbb.setValue(); は、bbb というオブジェクトの setValue メソッドを呼び出しています。
 		bbb.setValue();
 		// 引数として渡されたオブジェクトの文字列表現を出力します。
-		System.out.println(bbb);
+		System.out.println(bbb.display());
 	}
 }
 

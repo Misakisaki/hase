@@ -3,8 +3,8 @@ package question1_25b;
 // Javaでjava.util.Randomクラスをインポートしていることを示しています。
 import java.util.Random;
 
-// public class Super：publicは、このクラスがどのクラスからでもアクセス可能であることを示します。
-public class Super {
+    // public class Super：publicは、このクラスがどのクラスからでもアクセス可能であることを示します。
+    public class Super {
 	// 名前（フィールド）
 	private String name;
 	// HP：849
@@ -23,6 +23,8 @@ public class Super {
 		// コンストラクタの引数nameの値をクラスのフィールドnameに代入することです。
 		this.name = name;
 	}
+	
+
 
 	// setValue()メソッドは整数の値を設定し、それをコンソールに出力するだけの処理を行います。
 	public void setValue() {
@@ -41,52 +43,52 @@ public class Super {
 	}
 
 	// gethpメソッドはhpという名前の変数の値を返します。
-	public int gethp() {
+	public int getHp() {
 		return hp;
 	}
 
 	// sethpメソッドはhpという名前の変数の値を設定します。
-	public void sethp(int hp) {
+	public void setHp(int hp) {
 		this.hp = hp;
 	}
 	
 	// getmpメソッドはmpという名前の変数の値を返します。
-	public int getmp() {
+	public int getMp() {
 		return mp;
 	}
 
 	// setmpメソッドはmpという名前の変数の値を設定します。
-	public void setmp(int mp) {
+	public void setMp(int mp) {
 		this.mp = mp;
 	}
 	
 	// getpowerメソッドはpowerという名前の変数の値を返します。
-	public int getpower() {
+	public int getPower() {
 		return power;
 	}
 
 	// setpowerメソッドはpowerという名前の変数の値を設定します。
-	public void setpower(int power) {
+	public void setPower(int power) {
 		this.power = power;
 	}
 	
 	// getagilityメソッドはagilityという名前の変数の値を返します。
-	public int getagility() {
+	public int getAgility() {
 		return agility;
 	}
 
 	// setagilityメソッドはagilityという名前の変数の値を設定します。
-	public void setagility(int agility) {
+	public void setAgility(int agility) {
 		this.agility = agility;
 	}
 	
 	// getdefenseメソッドはdefenseという名前の変数の値を返します。
-	public int getdefense() {
+	public int getDefense() {
 		return defense;
 	}
 
 	// setdefenseメソッドはdefenseという名前の変数の値を設定します。
-	public void setdefense(int defense) {
+	public void setDefense(int defense) {
 		this.defense = defense;
 	}
 
@@ -101,9 +103,11 @@ public class Super {
 	}
 
 	// toString()メソッドは以下のような文字列を返します：「 名前 」 さん ステータスHP：10   MP：20 攻撃力：30   素早さ：40  防御力：50   さあ冒険に出かけよう！
-	public String toString() {
-		return "こんにちは 「 " + name + " 」 さん\n" + "ステータス\n" + "HP：" + hp + "\nMP：" + mp + " \n攻撃力："
-				+ power + "\n素早さ：" + agility + "\n防御力：" + defense + "\n\nさあ冒険に出かけよう！";
+	public String display() {
+		return  "こんにちは 「 " + getName()  + " 」 さん\n" + "ステータス\n" + "HP：" + getHp() + "\nMP：" + getMp()  + " \n攻撃力："
+				+ getPower()  + "\n素早さ：" + getAgility() + "\n防御力：" + getDefense() + "\n\nさあ冒険に出かけよう！";
+
+	   	
 	}
 }
 

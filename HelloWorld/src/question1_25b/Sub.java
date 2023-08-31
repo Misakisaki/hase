@@ -9,8 +9,15 @@ public class Sub extends Super {
 	// アノテーションが付いている場合、変数やメソッドが未使用であっても警告が表示されなくなります。
 	@SuppressWarnings("unused")
 	// privateなので同じクラス内からのみ呼び出すことができます
-	private void set名前(String name) {
+	private void setSub(String name) {
 		// TODO 自動生成されたメソッド・スタブ
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 
