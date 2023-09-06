@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		// str01に配列を代入する
-		String str01 = "ライオン:2.1:80,ゾウ:3.2:40,パンダ:1.9:30,チンパンジー:0.94:25,シマウマ:2.4:65,インコ:0.1:50";
 		// Scannerクラスのインスタンスを作成して、scannerという名前の変数に代入しています。
 		Scanner scanner = new Scanner(System.in);
+		// いろんな処理...
+		scanner.close();
 		// ユーザーが入力した次の行を読み取り、それを文字列として返します。ユーザーが入力した値を name 変数に格納します。
 		String name = scanner.nextLine();
 
@@ -22,7 +22,7 @@ public class Main {
 
 	private static void toUpperCase(String name) {
 		// TODO 自動生成されたメソッド・スタブ
-		// ストリングでarray01にスプリット（カンマ）でsplit　区切りたい文字列を 配列str01を代入
+		// ストリングでarray01にスプリット（カンマ）でsplit　区切りたい文字列を 配列array01を代入
 		String[] array01 = name.split(",");
 		System.out.print("コンソールに文字を入力してください");
 		// for文で 大きな枠組みで区切った配列を繰り返す
