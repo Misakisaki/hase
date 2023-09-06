@@ -6,11 +6,10 @@ public class Main {
 	public static void main(String[] args) {
 		// Scannerクラスのインスタンスを作成して、scannerという名前の変数に代入しています。
 		Scanner scanner = new Scanner(System.in);
-		// いろんな処理...
-		scanner.close();
 		// ユーザーが入力した次の行を読み取り、それを文字列として返します。ユーザーが入力した値を name 変数に格納します。
 		String name = scanner.nextLine();
-
+		// いろんな処理...
+		scanner.close();
 		// 変数 nameが null以外の時だけ toUpperCase()メソッドを呼び出し(try-catch文も利用できる）
 		if (name != null) {
 			toUpperCase(name);
